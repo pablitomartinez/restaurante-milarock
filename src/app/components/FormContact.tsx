@@ -2,6 +2,8 @@
 // Formulario de Contacto
 'use client';
 
+import { useState } from "react";
+
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -26,13 +28,13 @@ const ContactForm: React.FC = () => {
   return (
     <section id="contacto" className="py-16 bg-gray-100">
       <div className="container mx-auto px-4 max-w-md">
-        <h2 className="text-4xl text-center mb-12">Contáctanos</h2>
+        <h2 className="text-4xl text-center mb-12 text-red-800">Contáctanos</h2>
         <form
           onSubmit={handleSubmit}
           className="bg-white p-8 rounded-lg shadow-md"
         >
           <div className="mb-4">
-            <label htmlFor="name" className="block mb-2">
+            <label htmlFor="name" className="block mb-2 text-red-800">
               Nombre
             </label>
             <input
@@ -41,12 +43,12 @@ const ContactForm: React.FC = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded  text-red-900"
               required
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block mb-2">
+            <label htmlFor="email" className="block mb-2 text-red-800">
               Email
             </label>
             <input
@@ -55,12 +57,12 @@ const ContactForm: React.FC = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded text-red-900"
               required
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="block mb-2">
+            <label htmlFor="message" className="block mb-2 text-red-800">
               Mensaje
             </label>
             <textarea
@@ -68,7 +70,7 @@ const ContactForm: React.FC = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded text-red-900"
               rows={4}
               required
             />

@@ -1,6 +1,7 @@
 import AboutUs from "./components/About";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
+import ContactForm from "./components/FormContact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutUs />
       <WineCatalog />
       <Testimonials />
+      <ContactForm />
       <Footer />
       <WhatsAppButton />
       {/* Aquí vendrían más secciones como Catálogo de Vinos, Ubicación, etc. */}

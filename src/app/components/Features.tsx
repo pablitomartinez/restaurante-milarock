@@ -26,14 +26,14 @@ const Features: React.FC = () => {
   return (
     <section id="nosotros" className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className='text-4xl text-center mb-12' >
+        <h2 className="text-4xl text-center mb-12 text-red-800">
           Por Qué Elegirnos
         </h2>
         <div className="flex flex-wrap justify-center gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="text-center max-w-xs bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all"
+              className="text-center max-w-xs bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all text-red-800 "
             >
               <div className="flex justify-center mb-4">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>

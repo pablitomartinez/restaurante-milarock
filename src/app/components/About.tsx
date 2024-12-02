@@ -1,18 +1,27 @@
+import Image from "next/image";
 
 // Nueva Sección Sobre la Bodega
 const AboutUs: React.FC = () => {
   return (
     <section id="nosotros" className="py-16 bg-white">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 mb-8 md:mr-12">
-          <img
+        <div className="md:w-1/2  mb-8 md:mr-12 flex justify-center items-center">
+          {/* <img
             src="/banner.vinos.jpg"
             alt="Historia de Bodega Don Milagro"
             className="rounded-lg shadow-lg"
+          /> */}
+          <Image
+            src="/banner.vinos.jpg"
+            alt="Historia de Bodega Don Milagro"
+            width={700} // Ajusta el ancho según tu diseño
+            height={400} // Ajusta el alto según tu diseño
+            className="rounded-lg shadow-lg"
+            priority // Si la imagen es importante para la primera impresión
           />
         </div>
         <div className="md:w-1/2">
-          <h2 className="text-4xl mb-6">
+          <h2 className="text-4xl mb-6 text-red-700">
             Nuestra Historia
           </h2>
           <p className="text-gray-700 mb-4">

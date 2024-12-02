@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const WineCatalog: React.FC = () => {
   const wines = [
     {
@@ -5,7 +7,7 @@ const WineCatalog: React.FC = () => {
       type: "Tinto Reserva",
       description:
         "Un vino intenso que captura la esencia de los suelos rojos de Purmamarca. Notas de frutos maduros y especias.",
-      image: "vino.pueblo.rojo.jpeg",
+      image: "/vino.pueblo.rojo.jpeg",
       details: [
         "Uvas: Malbec",
         "Crianza: 12 meses en roble",
@@ -17,7 +19,7 @@ const WineCatalog: React.FC = () => {
       type: "Blend Edición Especial",
       description:
         "Celebrando la riqueza cultural de Jujuy. Un blend vibrante con personalidad única.",
-      image: "vino.tinto.ligero.jpeg",
+      image: "/vino.tinto.ligero.jpeg",
       details: [
         "Uvas: Malbec, Cabernet",
         "Crianza: 8 meses en roble",
@@ -29,7 +31,7 @@ const WineCatalog: React.FC = () => {
       type: "Vino Blanco",
       description:
         "Fresco y aromático, inspirado en los colores luminosos de la Quebrada de Humahuaca.",
-      image: "vino.blanco.jpg",
+      image: "/vino.blanco.jpg",
       details: ["Uvas: Torrontés", "Sin crianza", "Graduación: 12.5%"],
     },
   ];
@@ -37,18 +39,20 @@ const WineCatalog: React.FC = () => {
   return (
     <section id="vinos" className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl text-center mb-12">
+        <h2 className="text-4xl text-center mb-12 text-red-800">
           Nuestros Vinos
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {wines.map((wine, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all"
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all text-red-800"
             >
-              <img
-                src={wine.image}
+              <Image
+                src={wine.image} // Assuming wine.image holds the image path
                 alt={wine.name}
+                width={200} // Replace with actual image width
+                height={200} // Replace with actual image height
                 className="w-full h-72 object-cover"
               />
               <div className="p-6">
