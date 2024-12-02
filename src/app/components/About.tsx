@@ -26,7 +26,7 @@ const AboutUs: React.FC = () => {
           </h2>
           <p className="text-gray-700 mb-4">
             Fundada en 2005 en las tierras ancestrales de Purmamarca, Bodega Don
-            Milagro nace del sueño de la familia Rodríguez de preservar la
+            Milagro nace del sueño de la familia Cruz de preservar la
             tradición vitivinícola de Jujuy.
           </p>
           <p className="text-gray-700 mb-4">
