@@ -2,6 +2,7 @@ import AboutUs from "./components/About";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import WineCatalog from "./components/WinesCatalog";
 
 
 //fuente
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Features />
       <AboutUs />
+      <WineCatalog />
       {/* Aquí vendrían más secciones como Catálogo de Vinos, Ubicación, etc. */}
     </main>
   );
