@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
+import WhatsAppButton from "./components/Whatsapp";
 import WineCatalog from "./components/WinesCatalog";
 
 //fuente
@@ -18,6 +19,7 @@ export default function Home() {
       <WineCatalog />
       <Testimonials />
       <Footer />
+      <WhatsAppButton />
       {/* Aquí vendrían más secciones como Catálogo de Vinos, Ubicación, etc. */}
     </main>
   );
