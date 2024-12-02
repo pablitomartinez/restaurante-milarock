@@ -1,3 +1,9 @@
+//iconos
+import { Facebook, Instagram } from "lucide-react";
+// import Image from "next/image";
+
+import Link from "next/link";
+
 // Pie de Página
 const Footer: React.FC = () => {
   return (
@@ -13,32 +19,36 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Redes Sociales</h3>
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-red-500">
-              {/* <WhatsApp /> */}
-            </a>
-            <a href="#" className="hover:text-red-500">
-              {/* <Instagram /> */}
-            </a>
-            <a href="#" className="hover:text-red-500">
-              {/* <Facebook /> */}
-            </a>
-            <a href="#" className="hover:text-red-500">
-              {/* <Mail /> */}
-            </a>
+            {/* <Link href="#" className="hover:text-red-500">
+              <Image
+                src="/icons/whatsapp.svg"
+                alt="WhatsApp"
+                width={24} // Ajusta el ancho según tu imagen
+                height={24} // Ajusta el alto según tu imagen
+                className="h-6 w-6 text-white"
+              />
+            </Link> */}
+            <Link href="#" className="hover:text-red-500">
+              <Instagram />
+            </Link>
+            <Link href="#" className="hover:text-red-500">
+              <Facebook />
+            </Link>
+            
           </div>
         </div>
         <div>
           <h3 className="text-xl font-semibold mb-4">Links</h3>
           <ul>
             <li>
-              <a href="#" className="hover:text-red-500">
+              <Link href="#" className="hover:text-red-500">
                 Política de Privacidad
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-red-500">
+              <Link href="#" className="hover:text-red-500">
                 Términos y Condiciones
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
