@@ -1,10 +1,10 @@
 import AboutUs from "./components/About";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
 import WineCatalog from "./components/WinesCatalog";
-
 
 //fuente
 
@@ -17,6 +17,7 @@ export default function Home() {
       <AboutUs />
       <WineCatalog />
       <Testimonials />
+      <Footer />
       {/* Aquí vendrían más secciones como Catálogo de Vinos, Ubicación, etc. */}
     </main>
   );
