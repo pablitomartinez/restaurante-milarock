@@ -24,7 +24,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section id="nosotros" className="py-16 bg-gray-100">
+    <section className="py-16 bg-gray-200">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl text-center mb-12 text-red-800">
           Por Qué Elegirnos

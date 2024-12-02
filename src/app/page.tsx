@@ -3,6 +3,7 @@ import Features from "./components/Features";
 import Footer from "./components/Footer";
 import ContactForm from "./components/FormContact";
 import Hero from "./components/Hero";
+import LocationMap from "./components/Location";
 import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
 import WhatsAppButton from "./components/Whatsapp";
@@ -15,10 +16,11 @@ export default function Home() {
     <main className="bg-white">
       <Navbar />
       <Hero />
+      <WineCatalog />
       <Features />
       <AboutUs />
-      <WineCatalog />
       <Testimonials />
+      <LocationMap />
       <ContactForm />
       <Footer />
       <WhatsAppButton />
