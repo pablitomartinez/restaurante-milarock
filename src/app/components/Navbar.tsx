@@ -1,17 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AlignJustify, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null); //Referencia al contenedor del menu
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  //detectar click fuera del menu
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false); //cerrar el menu
+      }
+    };
+    //agregar evento global de click
+    document.addEventListener("mousedown", handleClickOutside);
+
+    //limpiar el evento cuando el componente se desmoenta
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
   return (
     <nav className="fixed w-full z-50 bg-gray-900/70 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,6 +73,7 @@ const Navbar: React.FC = () => {
               {isMenuOpen ? <X /> : <AlignJustify />}
             </button>
             <div
+              ref={menuRef}
               className={`md:hidden fixed top-16 right-0 bg-gray-900 w-full z-40 transform transition-all duration-300 ease-out ${
                 isMenuOpen
                   ? "bopacity-100 translate-y-0"
@@ -63,7 +81,7 @@ const Navbar: React.FC = () => {
               }`}
             >
               <div className="flex flex-col items-center text-center  justify-center h-full">
-                <div className="ml-10 flex flex-col space-y-4 w-full">
+                <div className=" flex flex-col space-y-4 w-full">
                   {["Inicio", "Vinos", "Nosotros", "Ubicación", "Contacto"].map(
                     (item) => (
                       <Link
