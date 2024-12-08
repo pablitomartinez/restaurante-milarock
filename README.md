@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Proyecto Mila Rock - Sanguchería y Vinos
 
-## Getting Started
+Este proyecto fue creado usando **Next.js**, y está orientado a una **sanguchería** que ofrece vinos artesanales. Este README tiene como objetivo proporcionar una guía para los futuros desarrolladores que trabajen en este proyecto.
 
-First, run the development server:
+---
+
+## 🚀 Primeros Pasos
+
+Para empezar a trabajar en el proyecto, sigue los pasos a continuación:
+
+### 1. Clona el repositorio
+
+Primero, clona este repositorio en tu máquina local:
 
 ```bash
+git clone <URL_DEL_REPOSITORIO>
+2. Instala las dependencias
+Entra en el directorio del proyecto e instala las dependencias:
+
+bash
+Copiar código
+cd nombre-del-repositorio
+npm install
+O si prefieres usar yarn:
+
+bash
+Copiar código
+yarn install
+3. Ejecuta el servidor de desarrollo
+Para ejecutar el servidor local y ver la aplicación, usa uno de los siguientes comandos:
+
+bash
+Copiar código
 npm run dev
-# or
+# o
 yarn dev
-# or
+# o
 pnpm dev
-# or
-bun dev
-```
+Luego, abre tu navegador y visita http://localhost:3000 para ver el resultado.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🌟 Estructura del Proyecto
+El proyecto está estructurado de la siguiente forma:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+bash
+Copiar código
+/public
+  └── /icons          # Archivos de iconos (por ejemplo, WhatsApp)
+  └── /images         # Imágenes como banner, logotipo, etc.
+/src
+  └── /components     # Componentes reutilizables (Ej: Header, Footer, etc.)
+  └── /pages          # Páginas de la aplicación (Ej: Home, Contacto, etc.)
+  └── /styles         # Archivos de estilos personalizados
+  └── /utils          # Funciones y utilidades
+  └── /hooks          # Custom hooks de React
+🛠️ Personalización del Proyecto
+Para personalizar el proyecto, sigue las indicaciones:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Actualización de textos y contenidos:
 
-## Learn More
+Los textos de cada componente y página están definidos dentro de los archivos en la carpeta src. Asegúrate de actualizar los textos de acuerdo con el branding de Mila Rock.
+Los componentes clave como el Footer, ContactForm, y AboutUs contienen ejemplos de textos que puedes reemplazar por los específicos de la sanguchería.
+Configuración de imágenes:
 
-To learn more about Next.js, take a look at the following resources:
+En el directorio /public/images/ encontrarás imágenes como banners y el logo. Si deseas cambiar alguna imagen, simplemente reemplaza los archivos dentro de este directorio o actualiza las rutas correspondientes en los componentes.
+Configuración de los íconos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Los íconos para redes sociales (por ejemplo, WhatsApp, Instagram) están ubicados en la carpeta /public/icons/. Puedes sustituir estos íconos por los que prefieras.
+Configura los enlaces:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+WhatsApp: En el componente WhatsAppButton, actualiza el número de teléfono en el enlace https://wa.me/<numero-de-whatsapp>.
+Redes Sociales: En el Footer, cambia los enlaces de las redes sociales a las correspondientes de Mila Rock.
+📚 Recursos
+Aquí te dejamos algunos enlaces útiles para mejorar tu experiencia y profundizar en los temas relacionados con el proyecto:
 
-## Deploy on Vercel
+Documentación de Next.js - Aprende sobre las características y la API de Next.js.
+Tutorial de Next.js - Un tutorial interactivo para aprender Next.js paso a paso.
+Fontes de Google - Si decides cambiar o agregar nuevas fuentes.
+🚀 Despliegue
+Despliegue en Vercel
+La forma más sencilla de desplegar este proyecto es a través de Vercel, plataforma creada por los desarrolladores de Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Sigue los pasos para desplegar el proyecto en la nube:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Crea una cuenta en Vercel (si no tienes una).
+Conecta tu repositorio de GitHub.
+Selecciona el proyecto y despliega.
+¡Listo! Ahora tu proyecto estará disponible públicamente.
+
+Para más detalles, consulta la documentación oficial de despliegue de Next.js.
+
+⚙️ Notas Importantes
+Tecnologías utilizadas:
+
+Next.js para el desarrollo del frontend.
+Tailwind CSS para los estilos (clases utilitarias).
+TypeScript para la tipificación estática de JavaScript.
+Lucide React para los íconos.
+¿Cómo agregar un nuevo componente?:
+
+Crea el componente dentro de src/components/ y asegúrate de importarlo y usarlo correctamente en las páginas o en otros componentes.
+📝 Contribuciones
+Si deseas contribuir con nuevas características, correcciones o mejoras, sigue estos pasos:
+
+Haz un fork del proyecto.
+Crea una rama para tu funcionalidad (git checkout -b feature/nueva-caracteristica).
+Realiza los cambios y haz commit de ellos (git commit -m 'Añadir nueva característica').
+Push a tu rama (git push origin feature/nueva-caracteristica).
+Crea un Pull Request para que podamos revisar tus cambios.
+📅 Licencia
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo LICENSE.

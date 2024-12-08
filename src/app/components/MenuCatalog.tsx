@@ -7,7 +7,7 @@ const MenuCatalog: React.FC = () => {
       type: "Tradicional",
       description:
         "Una milanesa crocante y jugosa, preparada con la receta clásica argentina.",
-      image: "/milanesa.clasica.jpg",
+      image: "/comidas/milanesa1.jpg",
       details: [
         "Acompañamientos: Papas fritas o ensalada",
         "Salsas: Mayonesa, Ketchup, Mostaza",
@@ -19,7 +19,7 @@ const MenuCatalog: React.FC = () => {
       type: "Con Salsa y Queso",
       description:
         "Nuestra versión de la napolitana: milanesa cubierta con salsa de tomate, jamón y queso derretido.",
-      image: "/milanesa.napolitana.jpg",
+      image: "/comidas/mila-napolitana.jpg",
       details: [
         "Acompañamientos: Papas fritas o ensalada",
         "Extras: Huevo frito, Doble queso",
@@ -31,7 +31,7 @@ const MenuCatalog: React.FC = () => {
       type: "Chef's Choice",
       description:
         "Una creación única con ingredientes frescos, ideal para quienes buscan sabores especiales.",
-      image: "/milanesa.especial.jpg",
+      image: "/comidas/milanesa-esp.jpg",
       details: [
         "Acompañamientos: Papas fritas o puré",
         "Extras: Bacon, Palta, Cebolla caramelizada",

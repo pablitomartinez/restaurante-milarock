@@ -1,12 +1,14 @@
 // Componente Hero
 
+import Image from "next/image";
+
 const Hero: React.FC = () => {
   return (
     <section
       id="inicio"
       className="relative h-screen flex items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: 'url("/banner.milarock.jpg")', // Cambiar a una imagen adecuada para la sanguchería
+        backgroundImage: 'url("/comidas/banner.milanesa.png")', // Cambiar a una imagen adecuada para la sanguchería
         backgroundBlendMode: "overlay",
         backgroundColor: "rgba(0,0,0,0.5)",
       }}
@@ -27,15 +29,15 @@ const Hero: React.FC = () => {
         </a>
         {/* Detalle visual: Banderas */}
         <div className="flex justify-center items-center mt-8 space-x-2">
-          <img
-            src="/argentina-flag.png" // Asegúrate de subir esta imagen
+          <Image
+            src="/flags/arg.flag.png" // Asegúrate de subir esta imagen
             alt="Bandera de Argentina"
             width={32}
             height={24}
             className="w-8 h-6"
           />
-          <img
-            src="/bolivia-flag.png" // Asegúrate de subir esta imagen
+          <Image
+            src="/flags/bolivia.flag.png" // Asegúrate de subir esta imagen
             alt="Bandera de Bolivia"
             width={32}
             height={24}

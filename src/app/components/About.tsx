@@ -8,7 +8,7 @@ const AboutUs: React.FC = () => {
         <div className="md:w-1/2 mb-8 md:mr-12 flex justify-center items-center">
           {/* Imagen representativa */}
           <Image
-            src="/mila_rock_historia.jpg" // Cambia la imagen al recurso relevante
+            src="/mila-rock.jpg" // Cambia la imagen al recurso relevante
             alt="Historia de Mila Rock"
             width={700} // Ajusta el ancho según tu diseño
             height={400} // Ajusta el alto según tu diseño
