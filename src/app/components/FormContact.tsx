@@ -1,9 +1,7 @@
-
 // Formulario de Contacto
-'use client';
+"use client";
 
 import { useState } from "react";
-
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -86,6 +84,5 @@ const ContactForm: React.FC = () => {
     </section>
   );
 };
-
 
 export default ContactForm;
