@@ -7,7 +7,7 @@ import LocationMap from "./components/Location";
 import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
 import WhatsAppButton from "./components/Whatsapp";
-import WineCatalog from "./components/WinesCatalog";
+import MenuCatalog from "./components/MenuCatalog";
 
 //fuente
 
@@ -16,7 +16,7 @@ export default function Home() {
     <main className="bg-white">
       <Navbar />
       <Hero />
-      <WineCatalog />
+      <MenuCatalog />
       <Features />
       <AboutUs />
       <Testimonials />
